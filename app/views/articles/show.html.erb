@@ -1,3 +1,9 @@
-<h1><%= @article.title %></h1>
-<p><%= @article.content %></p>
-<%= link_to 'Back', articles_path %>
+<div class="mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="card-title display-4 text-center mb-4"><%= @article.title %></h1>
+      <p class="card-text lead"><%= @article.content %></p>
+    </div>
+  </div>
+  <%= link_to 'Back', articles_path, class: 'btn btn-secondary mt-3' %>
+</div>
